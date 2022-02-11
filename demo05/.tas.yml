@@ -1,0 +1,15 @@
+--- 
+framework: mocha
+postMerge: 
+  pattern: 
+    - "**/*.test.js"
+postRun: 
+  command: 
+    - "node --version"  
+preMerge: 
+  pattern: 
+    - "**/*.test.js"
+preRun: 
+  command: 
+    - npm install    
+
